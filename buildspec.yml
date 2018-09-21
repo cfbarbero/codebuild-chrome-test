@@ -38,8 +38,8 @@ phases:
       - npm install
 
   pre_build:
-    commands
-	  - echo "Nothing to pre_build"
+    commands:
+      - echo "Nothing to pre_build"
 
   build:
     commands:
