@@ -46,6 +46,8 @@ phases:
 
       - printenv 
 
+      - cd my-app
+
       # Build the project
       - ng build
 
@@ -65,3 +67,8 @@ phases:
 artifacts:
   files:
     - src/*
+
+cache:
+  paths:
+    - '/usr/local/lib/node_modules/**/*'
+    - 'node_modules/**/*'
